@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Button from './Components/Button';
+import ButtonStyle from './Components/ButtonStyle';
 import DataFetch from './Components/DataFetch';
 import Post from './Components/Post';
 import User from './Components/User';
@@ -42,6 +43,12 @@ const UserArray = [
   },
 ]
 
+const style = {
+  backgroundColor: "green",
+  color:"white",
+  padding: "0.5rem"
+}
+
 function App() {
   return (
     <div className="App">
@@ -62,6 +69,9 @@ function App() {
     <Button>Click me</Button>
 
     <Post/>
+
+    {/* style componet or css pass kora props diye */}
+    <ButtonStyle btnStyle={style}/>
     </div>
   );
 }
