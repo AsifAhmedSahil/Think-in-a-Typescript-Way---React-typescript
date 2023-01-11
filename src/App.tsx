@@ -4,6 +4,7 @@ import './App.css';
 import Button from './Components/Button';
 import ButtonStyle from './Components/ButtonStyle';
 import DataFetch from './Components/DataFetch';
+import InputEvents from './Components/InputEvents';
 import Post from './Components/Post';
 import User from './Components/User';
 import UserArrayofObject from './Components/UserArrayofObject';
@@ -91,6 +92,8 @@ function App() {
     <h1>Hook Type </h1>
 
     <button onClick={handleUSer}>Add User</button>
+
+    <InputEvents/>
 
     </div>
   );
