@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import DataFetch from './Components/DataFetch';
 import User from './Components/User';
 import UserArrayofObject from './Components/UserArrayofObject';
 import USerObject from './Components/USerObject';
@@ -43,12 +44,14 @@ function App() {
   return (
     <div className="App">
      
-    <User name={"Asif Ahmed"} age={22} isRegistered={true} lang={['bangla','english']}/>
+    {/* <User name={"Asif Ahmed"} age={22} isRegistered={true} lang={['bangla','english']}/> */}
     {/* <User name={"Sanjida Alam"} age={22} isRegistered={false}/> */}
 
     {/* <USerObject userdata={userdata1}/> 
     <USerObject userdata={userdata2}/>  */}
-    <UserArrayofObject UserArray={UserArray}/>
+    {/* <UserArrayofObject UserArray={UserArray}/> */}
+
+    <DataFetch status="success"/>
     </div>
   );
 }
