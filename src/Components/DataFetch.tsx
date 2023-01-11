@@ -1,5 +1,7 @@
 import React from 'react'
 
+// this is called user define props type******
+
 type DataFetchProps = {status: "success" | "error" | "loading"}
 
 

@@ -1,7 +1,9 @@
 import React from 'react';
 
 import './App.css';
+import Button from './Components/Button';
 import DataFetch from './Components/DataFetch';
+import Post from './Components/Post';
 import User from './Components/User';
 import UserArrayofObject from './Components/UserArrayofObject';
 import USerObject from './Components/USerObject';
@@ -51,7 +53,15 @@ function App() {
     <USerObject userdata={userdata2}/>  */}
     {/* <UserArrayofObject UserArray={UserArray}/> */}
 
-    <DataFetch status="success"/>
+
+{/* user define props */}
+    {/* <DataFetch status="success"/> */}
+
+    {/* Button children props */}
+    <h1>Children Props</h1>
+    <Button>Click me</Button>
+
+    <Post/>
     </div>
   );
 }
