@@ -4,6 +4,7 @@ import './App.css';
 import Button from './Components/Button';
 import ButtonStyle from './Components/ButtonStyle';
 import DataFetch from './Components/DataFetch';
+import Form from './Components/Form';
 import InputEvents from './Components/InputEvents';
 import Post from './Components/Post';
 import User from './Components/User';
@@ -94,6 +95,8 @@ function App() {
     <button onClick={handleUSer}>Add User</button>
 
     <InputEvents/>
+
+    <Form/>
 
     </div>
   );
